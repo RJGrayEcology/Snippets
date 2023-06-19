@@ -1,0 +1,41 @@
+#########################
+## Likert Analysis
+#########################
+
+# set working directory
+setwd("your/file/path")
+list.files()
+
+# open libraries
+library(ggplot2)
+library(likert)
+library(readxl)
+
+# read in data
+
+
+#-------------------------------------------------------------------------
+# --- helper function 1
+# data.frame(lapply(data.frame, function(x) gsub("find","replace", x)))
+
+# --- helper function 2
+# data.frame(lapply(data, trimws))
+
+
+# --- helper function 3: set factor levels
+# levs <- c("lower level","neutral level","upper level")
+# data.frame(lapply(lik, function(x) factor(x, levels = levs)))
+
+# --- likert function
+#Likert_results <- likert(likert_formatted_data)
+
+
+# --- plot function
+# lik.plot <- plot(likert_results, text.size=5)+
+#  theme_bw(base_size = 20)+
+#  theme(legend.position = "bottom")+
+#  labs(title = "Wildlife perspectives",
+#       subtitle = "n = 810")
+# lik.plot
+
+#-------------------------------------------------------------------------
