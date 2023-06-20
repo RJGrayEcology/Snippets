@@ -1,0 +1,27 @@
+##############################
+## Frequency/Percentage Table
+##############################
+
+# set working directory
+setwd("your/file/path")
+list.files()
+
+# open libraries
+library(readxl)
+library(tidyverse)
+library(reshape2)
+
+# read in data
+
+#-------------------------------------------------------------------------
+# --- helper function 1: "melt" data transformation
+# dat.melt <- melt(data, id.vars = "Grouping_column")
+
+# --- helper function 2: dplyr pipeline
+#dat.tab <- data%>%
+#  group_by(Grouping_column_ID)%>%
+#  count(value)%>%
+#  mutate(percent = round(n/sum(n)*100, 1))
+
+
+#-------------------------------------------------------------------------
