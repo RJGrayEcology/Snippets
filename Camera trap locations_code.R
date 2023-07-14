@@ -116,10 +116,9 @@ write.csv(data.frame(pts.sys.ll), "Camera_locations.LL.csv")
 
 library(sf)
 # handheld GPS units use .gpx format 
-#Now only write the "name" field to the file
-st_write(pts.sys.ll["name"], driver="GPX", layer="waypoints", 
-         dsn=paste0(getwd(),"/cam_locations.gpx"),
-         delete_dsn = TRUE)
+#Now to the file
+write_sf(pts.sys.ll, "cam_locations.gpx", driver = "GPX", 
+         dataset_options = "GPX_USE_EXTENSIONS=YES")
 
 # with rgdal
 library(rgdal)
